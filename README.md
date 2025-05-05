@@ -1,49 +1,72 @@
-# MacOS on ThinkPad X230
+<h1 align="center">Hackintosh the Thinkpad X230</h1>
 
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-X230-blue.svg)](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf)
-[![MacOS Big Sur](https://img.shields.io/badge/macOS-Big_Sur-purple.svg)](https://www.apple.com/macos/big-sur/)
-[![MacOS Monterey](https://img.shields.io/badge/macOS-Monterey-pink.svg)](https://www.apple.com/macos/monterey-preview/)
-[![Release](https://img.shields.io/badge/Download-latest-brightgreen.svg)](https://github.com/banhbaoxamlan/X230-Hackintosh/releases/latest)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
-[![Donate](https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg)](https://www.paypal.com/paypalme/thebinhluong0519)
+<p align="center">
+    <a href="https://www.apple.com/">
+        <img src="https://img.shields.io/badge/Catalina-10.15.7-red.svg"/></a>
+    <a href="https://www.apple.com/macos/big-sur/">
+        <img src="https://img.shields.io/badge/Big_Sur-11.6.5-purple.svg"></a>
+    <a href="https://www.apple.com/macos/monterey/">
+        <img src="https://img.shields.io/badge/Monterey-12.3.1-brown"></a>
+    <a href="https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf">
+        <img src="https://img.shields.io/badge/ThinkPad-X230-blue"/></a>
+    <a href="https://github.com/acidanthera/OpenCorePkg">
+        <img src="https://img.shields.io/badge/OpenCore-0.7.9-blue"/></a>
+</p>
 
-#### READ THE ENTIRE README.MD BEFORE YOU START.
+<p align="center">
+    <a href="https://www.paypal.com/paypalme/thebinhluong0519">
+        <img src="https://img.shields.io/badge/-Buy%20me%20a%20coffee-orange.svg"></a>
+    <a href="https://www.buymeacoffee.com/karan1021">
+        <img src="https://img.shields.io/badge/Donate%20prabhakaran-Buymeacoffee%20-FFF27D"></a>
+    <a href="https://t.me/+KuAH5jUCAocwMzBl">
+        <img src="https://img.shields.io/badge/Telegram-Channel-33A8E3"></a>
+    
+</p>
+
+<p align="center">
+    <a href="">
+        <img src="/Other/Pics/X230.png" alt="Lenovo Thinkpad X230 macOS" width="400"> </a>
+</p>
 
 #### I am not responsible for any damages you may cause.
 
+#### If my work here helped you. Please consider donating, it would mean a lot to me.
+
 - Complete EFI packs are available in the releases page.
 - I will try my best to keep the repo updated with the latest kexts and OpenCore version.
-- Please don't clone or download the main branch for daily use.
+- Please **do not clone or download** the main branch for daily use: it may include **unstable code** just because it is my repository.
+- This EFI is configured with Catalina, Big Sur and Monterey.
 - With every EFI update you retrieve from here please remember to go through the post install guide.
+- For MacOS Monterey - Please go through [README_MONTEREY](/Other/README_MONTEREY.md).
 
-> ## Update
+## Update
 
-##### Recent | [Changelog Archive](/Other/Changelog.md)
-
-> ### 2021-06-10:
-- **Change SMBIOS to `MacBookPro11,5` or `MacBook12,1` and add boot-arg `-lilubetaall` if you want to use MacOS 12. (OR download Lilu v1.5.4).**
+### Recent | [Changelog Archive](/Other/Changelog.md)
 
 <details>
 <summary><strong> SUMMARY </strong></summary>
 <br>
 
-> ### Non-Fuctional:
+> ### Non-Fuctional
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
-| Fingerprint Reader                   | ❌   | `DISABLED` in BIOS to save power.   |
-| Wireless WAN                         | ❌   | `DISABLED` in BIOS to save power.   |
-| VGA Port                             | ❌   | Does not exist on real apple computers.   |
+| Fingerprint Reader                   | ❌   | `DISABLED` in BIOS to save power. |
+| Wireless WAN                         | ❌   | `DISABLED` in BIOS to save power. |
+| VGA Port                             | ❌   | Does not exist on real apple computers. |
 
 > ### Video and Audio
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
-| Full Graphics Accleration (QE/CI)    | ✅   | `WhateverGreen.kext`                   |
+| Full Graphics Accleration (QE/CI)    | ✅   | `WhateverGreen.kext`  |
 | Audio Recording                      | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
 | Audio Playback                       | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
 | Automatic Headphone Output Switching | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
 | Dock Audio Port                      | ✅   | `AppleALC.kext` with Layout ID = 55 and `SSDT-HPET.aml`   |
 
 > ### Power, Charge, Sleep and Hibernation
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | Battery Percentage Indication        | ✅   | `ECEnabler.kext`            | 
@@ -54,6 +77,7 @@
 | Battery Life                         | ✅   | Native, comparable to Windows/Linux. |
 
 > ### Input/ Output
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | WiFi                                 | ✅   | `AirportItlwm.kext`  |
@@ -63,6 +87,7 @@
 | USB Power Properties in macOS        | ✅   | `SSDT-EC-USBX.aml` |
 
 > ### Display, TrackPad, TrackPoint, and Keyboard
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | Brightness Adjustments | ✅  | `WhateverGreen.kext`, `SSDT-PNLF.aml` and `BrightnessKeys.kext`|
@@ -72,6 +97,7 @@
 | Multimedia Keys        | ✅  | `BrightnessKeys.kext` and [YogaSMC](https://github.com/zhen-zen/YogaSMC) |
 
 > ### macOS Continuity
+
 | Feature                              | Status | Dependency          |
 | :----------------------------------- | ------ | ------------------- |
 | iCloud, iMessage, FaceTime           | ✅   | Whitelisted Apple ID, Valid SMBIOS  |
@@ -85,6 +111,7 @@
 <br>
 
 Read these before you start:
+
 - [dortania's Hackintosh guides](https://github.com/dortania).
 - [dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/).
 - [dortania's OpenCore Post Install Guide](https://dortania.github.io/OpenCore-Post-Install/).
@@ -94,7 +121,7 @@ Read these before you start:
 - [WhateverGreen Intel HD Manual](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md).
 - `Configuration.pdf` and `Differences.pdf` in each `OpenCore` releases.
 
-</details> 
+</details>
 
 <details>
 <summary><strong> REQUIREMENTS </strong></summary>
@@ -110,18 +137,18 @@ Read these before you start:
 - [Hackintool](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/), for diagnostic ONLY, Hackintool should not be used for patching, it is outdated.
 - Patience and time, especially if this is your first time Hackintosh-ing.
 
-</details> 
+</details>
 
 <details>
 <summary><strong> HARDWARE </strong></summary>
 <br>
 
-| Category  | THINKPAD X230            | THINKPAD T530            | THINKPAD T430s            |
-| --------- | ------------------------ | ------------------------ | ------------------------- |
-| CPU       | Intel Core i5-3320M      | Intel Core i5-3320M      |  Intel Core i7-3520M      |
-| SSD       | Samsung 870 Evo 250GB    | SanDisk A400 256GB       |  Samsung 870 Evo 256GB    |
-| Display   | 12.5' IPS HD (1366x1768) | 15.6' TN FHD (1920x1080) |  14' TN HD+ (1600x900)    |
-| WiFi & BT | Intel Wireless-AC 7260   | DW1550 (BCM94352HMB)     |  Intel Centrino N-6205    |
+| Category  | THINKPAD X230            |
+| --------- | ------------------------ |
+| CPU       | Intel Core i5-3320M      |
+| SSD       | Samsung 870 Evo 250GB    |
+| Display   | 12.5' IPS HD (1366x1768) |
+| WiFi & BT | Intel Wireless-AC 7260   |
 
 - Refer to [X230-Platform_Specifications](https://psref.lenovo.com/syspool/Sys/PDF/withdrawnbook/ThinkPad_X230.pdf) for possible stock ThinkPad X230 configurations.
 
@@ -137,13 +164,13 @@ Before you do anything, please familiarize yourself with basic Hackintosh termin
 - [**README-HARDWARE**](/Other/README_HARDWARE.md): Requirements before installing.
 - [**README-OTHERS**](/Other/README_OTHERS.md): for post installation settings and other remarks.
 
-</details> 
+</details>
 
 <details>
 <summary><strong> BENCHMARKS </strong></summary>
 </br>
 
-- macOS 11.4, EFI 0.5-RC5, OpenCore 0.7.0
+- macOS 11.4, EFI OpenCore 0.7.1
 
 | CPU            | Single-Core | Multi-Core |
 | :------------- | ----------: | ---------: |
@@ -156,24 +183,14 @@ Before you do anything, please familiarize yourself with basic Hackintosh termin
 
 </details>
 
-<details>
-<summary><strong> OTHER REPOSITORIES </strong></summary>
-<br>
+# CONTACT
 
-- X230-hackintosh repositories:
-  - [i0Ek3/X230-Hackintosh-Backup](https://github.com/i0Ek3/X230-Hackintosh-Backup).
+- Email: thebinhluong0519@gmail.com
+- Email(Prabhakaran): prabha.karan.1021@gmail.com
+- Telegram: +84 (867)-450-107
+- Telegram(group): Click on the telegram button in the top
 
-</details> 
-
-> ## CONTACT:
- - Email: thebinhluong0519@gmail.com
- - Telegram: +84 (867)-450-107
-
-> ## SUPPORT
-
-<details>
-<summary><strong> CREDITS </strong></summary>
-<br>
+# Credits
 
 - [Apple](https://www.apple.com) for macOS.
 - [Acidanthera](https://github.com/acidanthera) for all the kexts/utilities that they made.
@@ -182,5 +199,3 @@ Before you do anything, please familiarize yourself with basic Hackintosh termin
 - [Dortania](https://github.com/dortania) for for the OpenCore Install Guide.
 - [simprecicchiani](https://github.com/simprecicchiani) for inspirational ThinkPad configurations.
 - [zhen-zen](https://github.com/zhen-zen) for **YogaSMC**.
-
-</details>

@@ -22,7 +22,7 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBookPro11,1-EH01</key>
+		<key>MacBookPro10,2-EH01</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -66,9 +66,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro11,1</string>
+			<string>MacBookPro10,2</string>
 		</dict>
-		<key>MacBookPro11,1-EH01-internal-hub</key>
+		<key>MacBookPro10,2-EH01-internal-hub</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -82,7 +82,7 @@
 			<dict>
 				<key>port-count</key>
 				<data>
-				CAAAAA==
+				AwAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
@@ -95,17 +95,6 @@
 						AwAAAA==
 						</data>
 						<key>portType</key>
-						<integer>3</integer>
-					</dict>
-					<key>HP18</key>
-					<dict>
-						<key>name</key>
-						<string>HP18</string>
-						<key>port</key>
-						<data>
-						CAAAAA==
-						</data>
-						<key>portType</key>
 						<integer>0</integer>
 					</dict>
 				</dict>
@@ -113,9 +102,9 @@
 			<key>locationID</key>
 			<integer>487587840</integer>
 			<key>model</key>
-			<string>MacBookPro11,1</string>
+			<string>MacBookPro10,2</string>
 		</dict>
-		<key>MacBookPro11,1-EH02</key>
+		<key>MacBookPro10,2-EH02</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -134,11 +123,11 @@
 				<key>kUSBSleepPortCurrentLimit</key>
 				<integer>2100</integer>
 				<key>kUSBSleepPowerSupply</key>
-				<integer>2600</integer>
+				<integer>5100</integer>
 				<key>kUSBWakePortCurrentLimit</key>
 				<integer>2100</integer>
 				<key>kUSBWakePowerSupply</key>
-				<integer>3200</integer>
+				<integer>5100</integer>
 				<key>port-count</key>
 				<data>
 				AQAAAA==
@@ -159,9 +148,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro11,1</string>
+			<string>MacBookPro10,2</string>
 		</dict>
-		<key>MacBookPro11,1-EH02-internal-hub</key>
+		<key>MacBookPro10,2-EH02-internal-hub</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -217,16 +206,16 @@
 			<key>locationID</key>
 			<integer>437256192</integer>
 			<key>model</key>
-			<string>MacBookPro11,1</string>
+			<string>MacBookPro10,2</string>
 		</dict>
-		<key>MacBookPro11,1-XHC</key>
+		<key>MacBookPro10,2-XHCI</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
 			<string>AppleUSBMergeNub</string>
 			<key>IONameMatch</key>
-			<string>XHC</string>
+			<string>XHCI</string>
 			<key>IOPCIPrimaryMatch</key>
 			<string>0x1e318086</string>
 			<key>IOProbeScore</key>
@@ -245,7 +234,7 @@
 				<integer>5100</integer>
 				<key>port-count</key>
 				<data>
-				BgAAAA==
+				CAAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
@@ -271,6 +260,28 @@
 						AgAAAA==
 						</data>
 					</dict>
+					<key>HS03</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>HS03</string>
+						<key>port</key>
+						<data>
+						AwAAAA==
+						</data>
+					</dict>
+					<key>HS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>HS04</string>
+						<key>port</key>
+						<data>
+						BAAAAA==
+						</data>
+					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
@@ -293,10 +304,32 @@
 						BgAAAA==
 						</data>
 					</dict>
+					<key>SS03</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>SS03</string>
+						<key>port</key>
+						<data>
+						BwAAAA==
+						</data>
+					</dict>
+					<key>SS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>SS04</string>
+						<key>port</key>
+						<data>
+						CAAAAA==
+						</data>
+					</dict>
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro11,1</string>
+			<string>MacBookPro10,2</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
